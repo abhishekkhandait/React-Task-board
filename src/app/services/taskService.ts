@@ -7,8 +7,8 @@ import { TaskModel } from "../models/taskModel"; */
 export class TasksService {
     // private instance variable to hold base url
     /* private baseUrl = 'http://localhost:3001/'; */
-    private boardUrl = 'http://localhost:3001/boards/';
-    private taskUrl = 'http://localhost:3001/tasks/';
+    private boardUrl = 'http://localhost:4001/boards/';
+    private taskUrl = 'http://localhost:4001/tasks/';
 
     public getBoards() {
         return axios.get(this.boardUrl);
