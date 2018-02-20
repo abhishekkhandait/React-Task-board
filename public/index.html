@@ -30,7 +30,6 @@
 
     html {
       background-color: #f3f3f3;
-      font-size: .875em;
       font-weight: 300;
       font-family: Roboto, "Helvetica Neue", sans-serif;
     }
@@ -39,47 +38,28 @@
       margin: 0 !important;
     }
 
-    h2 {
-      text-align: center;
-      text-decoration: underline;
-      font-family: Roboto, "Helvetica Neue", sans-serif;
+    .heading {
+      font-family: sans-serif;
+      font-size: 2em;
+      font-weight: 300;
+      vertical-align: bottom;
+      color: gray;
+      margin: 0.5em;
     }
 
-    .loader {
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      border: 16px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 16px solid #3498db;
-      width: 120px;
-      height: 120px;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
+    .mdl-cell {
+      box-sizing: border-box;
+      background-color: #BDBDBD;
+      height: 500px;
+      padding-left: 8px;
+      padding-top: 4px;
+      color: white;
     }
 
-    @-webkit-keyframes spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    .mat-tab-label {
-      min-width: 10px !important;
-      padding: 0 15px;
-      margin: 0 8px;
+    .mdl-card {
+      width: auto;
+      margin: 1em 1em 1em 0.5em;
+      min-height: 100px !important;
     }
   </style>
 </head>
