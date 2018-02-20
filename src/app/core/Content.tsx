@@ -1,6 +1,5 @@
-
 import * as React from "react";
-import { Tab } from "material-ui";
+import { BoardComponent } from "../components/Board";
 
 import { TasksService } from "../services/taskService";
 import { BoardModel } from "../models/boardModel";
@@ -39,18 +38,20 @@ export class ContentComponent extends React.Component<object, State> {
 
     render() {
         return (
-            <div>
+            <div className="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                <div className="mdl-tabs__tab-bar" style= {{ justifyContent: "flex-start" }}>
                 {
-                    this.state.boards.map((board) => {
+                    this.state.boards.map((board, index) => {
                         return (
-                            <Tab key={board.id} label={board.title} value={board.id}>
-                                <div>
-                                    Welcome to {board.title}
-                                </div>
-                            </Tab>
+                            <a href="#starks-panel" key={board.id} className="mdl-tabs__tab">{board.title}</a>
                         )
                     })
                 }
+                </div>
+                <div className="heading">Things to Get Done</div>
+                <div className="mdl-tabs__panel is-active" id="starks-panel">
+                    <BoardComponent />
+                </div>
             </div>
         );
     }
