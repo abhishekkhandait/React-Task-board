@@ -49,7 +49,7 @@ export class ContentComponent extends React.Component<object, State> {
                 }
                 </div>
                 <div className="heading">Things to Get Done</div>
-                <div className="mdl-tabs__panel is-active" id="starks-panel">
+                <div className="mdl-tabs__panel is-active" id="starks-panel" style={{ position: "fixed", width: "100%", height: "75%" }}>
                     <BoardComponent />
                 </div>
             </div>
