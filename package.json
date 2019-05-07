@@ -5,14 +5,14 @@
   "dependencies": {
     "@types/react": "^16.0.38",
     "@types/react-dom": "^16.0.4",
-    "@types/react-redux": "^5.0.15",
-    "axios": "^0.17.1",
+    "@types/react-redux": "^7.0.8",
+    "axios": "^0.18.0",
     "material-design-lite": "^1.3.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "react-scripts": "1.1.1",
-    "rxjs": "^5.5.6"
+    "react-redux": "^7.0.3",
+    "react-scripts": "3.0.0",
+    "rxjs": "^6.5.1"
   },
   "scripts": {
     "start": "npm-run-all --parallel startApp start-mockapi",
@@ -23,11 +23,11 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^3.4.1",
-    "json-server": "^0.12.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "json-server": "^0.14.2",
     "npm-run-all": "^4.1.2",
     "source-map-loader": "^0.2.3",
-    "typescript": "^2.7.2"
+    "typescript": "^3.4.5"
   },
   "author": "Abhishek Khandait",
   "license": "MIT"
